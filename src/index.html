@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <title>Projeto Instagram</title>
 </head>
 <body>
 
     <!-- Imagem principal -->
-    <div>
+    <div class="hidden">
         <img src="/src/img/imagemInstagram.png" alt="">
     </div>
 
     <!-- Formulário -->
-    <div>
-        <form>
-            <img src="/src/img/insta-logo.png" alt="">
-            
-            <input type="text" placeholder="Número de telefone, nome de usuário ou e-mail">
-            <input type="text" placeholder="Senha">
+    <div class="m-9">
+        <form class="flex flex-col justify-center items-center gap-2">
+            <img class="w-44" src="/src/img/insta-logo.png" alt="">
+        
+            <input class="border w-72 p-1.5 rounded-sm placeholder:text-slate-500 placeholder:text-sm placeholder:p-1.5" type="text" placeholder="Telefone, nome de usuário ou e-mail">
+            <input class="border w-72 p-1.5 rounded-sm placeholder:text-slate-500 placeholder:text-sm placeholder:p-1.5" type="text" placeholder="Senha">
 
-            <button>Entrar</button>
+            <button class="bg-sky-600">Entrar</button>
 
             <a href="">Entrar com o Facebook</a>
             <a href="">Esqueceu a senha</a>
@@ -33,5 +33,29 @@
     </div>
 
     <!-- Rodapé -->
+     <div>
+        <ul>
+            <li>Meta</li> 
+            <li>Sobre</li> 
+            <li>Blog</li>
+            <li>Carreiras</li>
+            <li>Ajuda</li>
+            <li>API</li>
+            <li>Privacidade</li>
+            <li>Termos</li>
+            <li>Localizações</li>
+            <li>Instagram Lite</li>
+            <li>Threads</li>
+            <li>Upload de contatos e não usuários</li>
+            <li>Meta Verified</li>                
+        </ul>
+        <div>
+            <ul>
+                <li>Português (Brasil)</li>
+                <li>© 2025 Instagram from Meta</li>
+            </ul>
+
+        </div>
+     </div>
 </body>
 </html>
