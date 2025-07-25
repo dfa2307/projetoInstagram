@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
     <title>Projeto Instagram</title>
-</head>
-<body>
-
+  </head>
+  <body class="grid grid-cols-1 md:grid-cols-2 md:justify-center md:items-center md:h-dvh">
     <!-- Imagem principal -->
-    <div class="hidden">
-        <img src="/src/img/imagemInstagram.png" alt="">
+    <div class="hidden md:flex justify-end">
+      <img class="md:w-lg" src="/src/img/imagemInstagram.png" alt="" />
     </div>
 
     <!-- Formulário -->
-    <div class="m-9">
-        <form class="flex flex-col justify-center items-center gap-2">
-            <img class="w-44" src="/src/img/insta-logo.png" alt="">
-        
-            <input class="border w-72 p-1.5 rounded-sm placeholder:text-slate-500 placeholder:text-sm placeholder:p-1.5" type="text" placeholder="Telefone, nome de usuário ou e-mail">
-            <input class="border w-72 p-1.5 rounded-sm placeholder:text-slate-500 placeholder:text-sm placeholder:p-1.5" type="text" placeholder="Senha">
+    <div class="m-9 md:flex md:items-start md:flex-col">
+      <form class="flex flex-col justify-center items-center gap-2">
+        <img class="w-44" src="/src/img/insta-logo.png" alt="" />
 
-            <button class="bg-sky-600">Entrar</button>
+        <input
+          class="border w-72 p-1.5 rounded-sm placeholder:text-slate-500 placeholder:text-sm placeholder:p-1.5"
+          type="text"
+          placeholder="Telefone, nome de usuário ou e-mail"
+        />
+        <input
+          class="border w-72 p-1.5 rounded-sm placeholder:text-slate-500 placeholder:text-sm placeholder:p-1.5"
+          type="text"
+          placeholder="Senha"
+        />
 
-            <a href="">Entrar com o Facebook</a>
-            <a href="">Esqueceu a senha</a>
-        </form>
+        <button
+          class="w-72 rounded-lg p-1.5 bg-sky-600 text-slate-50 font-medium"
+        >
+          Entrar
+        </button>
 
-        <div>
-            <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+        <div class="flex w-72 justify-center items-center gap-2">
+          <hr class="flex-1 border-slate-500" />
+          <span class="">OU</span>
+          <hr class="flex-1 border-slate-500" />
         </div>
+
+        <a class="text-sky-600 font-medium">Entrar com o Facebook</a>
+        <a class="font-medium">Esqueceu a senha</a>
+      </form>
+
+      <div class="flex justify-center mt-3.5 w-72">
+        <p>
+          Não tem uma conta?
+          <a class="text-indigo-700 font-medium">Cadastre-se</a>
+        </p>
+      </div>
     </div>
 
     <!-- Rodapé -->
-     <div>
-        <ul>
-            <li>Meta</li> 
-            <li>Sobre</li> 
-            <li>Blog</li>
-            <li>Carreiras</li>
-            <li>Ajuda</li>
-            <li>API</li>
-            <li>Privacidade</li>
-            <li>Termos</li>
-            <li>Localizações</li>
-            <li>Instagram Lite</li>
-            <li>Threads</li>
-            <li>Upload de contatos e não usuários</li>
-            <li>Meta Verified</li>                
+    <div class="md:col-span-2">
+      <ul class="flex flex-wrap gap-x-2.5 justify-center mb-4 font-extralight">
+        <li>Meta</li>
+        <li>Sobre</li>
+        <li>Blog</li>
+        <li>Carreiras</li>
+        <li>Ajuda</li>
+        <li>API</li>
+        <li>Privacidade</li>
+        <li>Termos</li>
+        <li>Localizações</li>
+        <li>Instagram Lite</li>
+        <li>Threads</li>
+        <li>Upload de contatos e não usuários</li>
+        <li>Meta Verified</li>
+      </ul>
+      <div>
+        <ul class="flex justify-center gap-x-4 font-extralight">
+          <li>Português (Brasil)</li>
+          <li>© 2025 Instagram from Meta</li>
         </ul>
-        <div>
-            <ul>
-                <li>Português (Brasil)</li>
-                <li>© 2025 Instagram from Meta</li>
-            </ul>
-
-        </div>
-     </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
